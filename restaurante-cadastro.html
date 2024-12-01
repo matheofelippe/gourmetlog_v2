@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GourmetLOG</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Header-->
+  <nav class="navbar navbar-expand-md bg-body-tertiary py-3 box-shadow">
+    <div class="container-lg">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/G-Gourmetlog.svg" alt="" width="50" height="50" class="d-inline-block align-flex">
+        GourmetLOG
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item px-1">
+            <a class="nav-link active" aria-current="page" href="restaurante-cadastro.html">Cadastre seu
+              Restaurante</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link " aria-current="page" href="faq.html">Perguntas Frequentes</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link " aria-current="page" href="feed.html">Faça Reservas</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="btn btn-outline-danger ml-md-2" aria-current="page" href="login.html">Login</a>
+          </li>
+      </div>
+  </nav>
+  <!-- Fim Header-->
+
+
+  <div class="container-md py-5">
+    <div class="row">
+      <div class="col-md-6">
+
+        <div class="card-body">
+          <h2>Cadastro Restaurante</h2>
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Razão Social:</label>
+              <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="cnpj" class="form-label">CNPJ:</label>
+              <input type="text" class="form-control" id="cnpj" name="cnpj" required>
+            </div>
+            <div class="mb-3">
+              <label for="NomeResp" class="form-label">Nome do responsável:</label>
+              <input type="text" class="form-control" id="NomeResp" name="NomeResp" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail:</label>
+              <input type="text" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="telefone" class="form-label">Telefone:</label>
+              <input type="tel" class="form-control" id="telefone" name="telefone" required>
+            </div>
+            <div class="mb-3">
+              <label for="especialidade" class="form-label">Especialidade:</label>
+              <select class="form-select" id="especialidade" name="especialidade" required>
+                <option value="" disabled selected>Selecione a especialidade</option>
+                <option value="Sushi">Sushi</option>
+                <option value="Massas">Massas</option>
+                <option value="Nordestina">Comida Nordestina</option>
+                <option value="Romana">Comida Romana</option>
+                <option value="Churrasco">Churrasco</option>
+                <option value="Vegetariana">Comida Vegetariana</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <div class="col-md-6">
+
+        <div class="card-body">
+          <h2>Endereço Restaurante</h2>
+          <form>
+            <div class="mb-3">
+              <label for="cep" class="form-label">Cep:</label>
+              <input type="text" class="form-control" id="cep" name="cep" required>
+            </div>
+            <div class="mb-3">
+              <label for="cidade" class="form-label">Cidade:</label>
+              <select class="form-select" id="cidade" name="cidade" required>
+                <option value="" disabled selected>Selecione sua cidade</option>
+                <option value="Sorocaba-SP">Sorocaba SP</option>
+                <option value="Votorantim-SP">Votorantim SP</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="zona" class="form-label">Zona:</label>
+              <select class="form-select" id="zona" name="zona" required>
+                <option value="" disabled selected>Selecione sua zona</option>
+                <option value="ZN">Zona Norte</option>
+                <option value="ZS">Zona Sul</option>
+                <option value="CT">Centro</option>
+                <option value="ZL">Zona Leste</option>
+                <option value="ZO">Zona Oeste</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="endereco" class="form-label">Endereço:</label>
+              <input type="text" class="form-control" id="endereco" name="endereco" required>
+            </div>
+            <div class="mb-3">
+              <label for="numero" class="form-label">Número:</label>
+              <input type="text" class="form-control" id="numero" name="numero" required>
+            </div>
+            <div class="mb-3">
+              <label for="complemento" class="form-label">Complemento:</label>
+              <input type="text" class="form-control" id="complemento" name="complemento" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-danger">Cadastrar</button>
+            <button type="submit" class="btn btn-outline-danger m-2">Limpar Campos</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+
+  <footer class="bg-dark text-white">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col justify-content-center">
+          <ul class="list-unstyled">
+            <li>
+              <a class="nav-link active" href="contato.html">Fale Conosco</a>
+            </li>
+            <li>
+              <a class="nav-link active" href="faq.html">Políticas de Privacidade e Termos de Uso</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!--Fim Footer-->
+
+  <!--Script-->
+
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

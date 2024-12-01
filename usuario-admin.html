@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Perfil do Usuário</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md bg-body-tertiary py-3 box-shadow">
+    <div class="container-lg">
+      <a class="navbar-brand" href="#">
+        <img src="img/G-Gourmetlog.svg" alt="" width="50" height="50" class="d-inline-block align-flex">
+        GourmetLOG
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-md-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="faq usuario.html">Perguntas Frequentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="feed usuario.html">Faça Reservas</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-danger ml-md-2" aria-current="page" href="#">Usuário</a>
+          </li>
+      </div>
+  </nav>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-2">
+            <!-- Informações do Usuário -->
+            <div class="card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem de Perfil" >
+                <div class="card-body">
+                    <h5 class="card-title">Nome do Usuário</h5>
+                    <p class="card-text">E-mail: usuario@email.com</p>
+                    <p class="card-text">Telefone: (15) 456-7890</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-10">
+            <!-- Reservas do Usuário -->
+            <div class="card">
+                <div class="card-header font-weight-bold">
+                    Suas Reservas
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Reserva 1 - Data: 01/01/2023
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-custom">Avaliar</button>
+                        <button type="button" class="btn btn-custom">Editar</button>
+                        <button type="button" class="btn btn-custom">Cancelar</button>
+                    </div>
+                </li>
+                
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Reserva 2 - Data: 02/01/2023
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-custom">Avaliar</button>
+                        <button type="button" class="btn btn-custom">Editar</button>
+                        <button type="button" class="btn btn-custom">Cancelar</button>
+                    </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Reserva 3 - Data: 03/01/2023
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-custom">Avaliar</button>
+                        <button type="button" class="btn btn-custom">Editar</button>
+                        <button type="button" class="btn btn-custom">Cancelar</button>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="card mt-3">
+              <div class="card-header font-weight-bold">
+                  Minhas Avaliações
+              </div>
+              <ul class="list-group list-group-flush">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Reserva 1 - Data: 01/01/2023
+                    <div class="star">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-fill.svg" alt="">
+                        <img src="icons/star-half.svg" alt="">
+                        <img src="icons/star.svg" alt="">
+                    </div>
+                  </li>
+                  
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Reserva 2 - Data: 02/01/2023
+                        <div class="star">
+                            <img src="icons/star-fill.svg" alt="">
+                            <img src="icons/star-fill.svg" alt="">
+                            <img src="icons/star-fill.svg" alt="">
+                            <img src="icons/star-half.svg" alt="">
+                            <img src="icons/star.svg" alt="">
+                        </div>    
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Reserva 3 - Data: 03/01/2023
+                        <div class="star">
+                            <img src="icons/star-fill.svg" alt="">
+                            <img src="icons/star-fill.svg" alt="">
+                            <img src="icons/star-fill.svg" alt="">
+                            <img src="icons/star-half.svg" alt="">
+                            <img src="icons/star.svg" alt="">
+                        </div>
+                 </li>
+                  </ul>
+              </ul>
+            </div>
+            <!-- Sugestões com Carrossel de Restaurantes -->
+            <div class="card mt-3">
+                <div class="card-header font-weight-bold">
+                    É a sua cara!
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <!-- Primeiro Carrossel -->
+                        <div class="col-md-6">
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="https://a.cdn-hotels.com/gdcs/production156/d1067/98b5cb4d-ea36-43fd-b3ca-21ae04c7c770.jpg"
+                                        class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img
+                                        src="https://www.wzhoteljardins.com.br/wp-content/uploads/2020/10/WZ-Hotel-Jardins-955-Lounge-e-Restaurante-19.jpg"
+                                        class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img
+                                        src="https://www.wzhoteljardins.com.br/wp-content/uploads/2020/10/WZ-Hotel-Jardins-955-Lounge-e-Restaurante-19.jpg"
+                                        class="d-block w-100" alt="...">
+                                    </div>
+                                  </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Próximo</span>
+                                </a>
+                            </div>
+                        </div>
+            
+                        <!-- Segundo Carrossel -->
+                        <div class="col-md-6">
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="https://a.cdn-hotels.com/gdcs/production156/d1067/98b5cb4d-ea36-43fd-b3ca-21ae04c7c770.jpg"
+                                        class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img
+                                        src="https://www.wzhoteljardins.com.br/wp-content/uploads/2020/10/WZ-Hotel-Jardins-955-Lounge-e-Restaurante-19.jpg"
+                                        class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img
+                                        src="https://www.wzhoteljardins.com.br/wp-content/uploads/2020/10/WZ-Hotel-Jardins-955-Lounge-e-Restaurante-19.jpg"
+                                        class="d-block w-100" alt="...">
+                                    </div>
+                                  </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Próximo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Minhas Avaliações -->
+
+
+
+
+
+<!--Footer-->
+
+<footer class="bg-dark text-white">
+  <div class="container py-5">
+      <div class="row">
+          <div class="col justify-content-center">
+              <ul class="list-unstyled">
+                  <li>
+                      <a class="nav-link active" href="restaurante-admin.html">Fale Conosco</a>
+                  </li>
+                  <li>
+                      <a class="nav-link active" href="restaurante-cadastro.html">Cadastre seu
+                          Restaurante</a>
+                  </li>
+                  <li>
+                      <a class="nav-link active" href="faq.html">Políticas de Privacidade e Termos
+                          de Uso</a>
+                  </li>
+
+              </ul>
+          </div>
+      </div>
+
+  </div>
+
+</footer>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+<!--Fim Footer-->
+</html>
