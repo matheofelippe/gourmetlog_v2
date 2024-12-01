@@ -37,7 +37,7 @@
             <a class="nav-link active" aria-current="page" href="feed.html">Faça Reservas</a>
           </li>
           <li class="nav-item px-3">
-            <a class="btn btn-outline-danger ml-md-2" aria-current="page" href="login.html">Login</a>
+            <a class="btn btn-outline-success ml-md-2" aria-current="page" href="login.html">Login</a>
           </li>
       </div>
   </nav>
@@ -141,8 +141,8 @@
       </div>
 
       <div class="col-md "> <!-- selecionar mesas-->
-        <h1 class="display-6 text-danger">Reserva</h1>
-        <form>
+        <h1 class="display-6 text-success">Reserva</h1>
+        <form onsubmit="return validarReserva()">
           <label for="name" class="form-label">Nome:</label>
           <input type="text" id="name" name="name" class="form-control" required>
 
@@ -165,7 +165,7 @@
           <textarea id="comments" name="comments" rows="4" class="form-control"></textarea>
 
           <div class="d-grid gap-2 col-6 mx-auto py-3">
-            <button type="submit" class="btn btn-danger btn-lg">Agendar</button>
+            <button type="submit" class="btn btn-success btn-lg">Reservar Agora</button>
           </div>
         </form>
 
@@ -199,6 +199,18 @@
 
   <!--Script-->
 
+  <script>
+    function validarReserva() {
+      const date = document.getElementById("date").value;
+      const hoje = new Date().toISOString().split('T')[0];
+  
+      if (date < hoje) {
+        alert("Por favor, escolha uma data futura.");
+        return false;
+      }
+      return true;
+    }
+  </script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
